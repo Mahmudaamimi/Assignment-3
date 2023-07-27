@@ -36,7 +36,7 @@
     <header class="max-w-screen-xl mx-auto p-8 lg:14">
         <nav>
             <div class="navbar  bg-[#F85559] rounded-full p-3 text-white">
-                <div class="navbar-start">
+                <div class="navbar-start w-0">
                   <div class="dropdown">
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
                       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
@@ -48,10 +48,7 @@
                       <li><a>All Fruits</a></li>
                     </ul>
                   </div>
-                  <a class="btn btn-ghost normal-case text-xl">
-                    <img src="./images/logo.png" alt="">
-                    <h2>Fruit Burst</h2>
-                  </a>
+              
                 </div>
                 <div class="navbar-center hidden lg:flex">
                   <ul class="menu menu-horizontal px-1">
@@ -61,6 +58,10 @@
                       <li><a>All Fruits</a></li>
                   </ul>
                 </div>
+                <a class="btn btn-ghost normal-case text-xl relative left-36">
+                  <img src="./images/logo.png" alt="">
+                  <h2>Fruit Burst</h2>
+                </a>
                 <div class="navbar-end">
                  
                     <input type="text" placeholder="Search here" class="input input-bordered p-4 input-xs w-full max-w-xs rounded-full" />
@@ -75,7 +76,7 @@
       <!-- slider or carousel  -->
       <div class="carousel w-full">
         <!-- slider 1  -->
-        <div id="slide1" class="carousel-item relative w-full mt-5">
+        <div id="slide1" class="carousel-item relative w-full mt-5 ">
           <div class="relative">
             <img src="./images/banner1.png" class="w-full" />
           </div>
@@ -138,8 +139,9 @@
         </div>
       </div>
       <!-- Banner-bottom  -->
-      <div class="fruits-botoom flex bg-white justify-between w-10/12 text-center m-auto relative -top-20 rounded-lg p-5 shadow-md  lg:visible">
-        <div>
+ 
+       <div class="fruits-bottom-items lg:flex md:flex bg-white justify-between w-10/12 text-center m-auto relative -top-20 rounded-lg p-5 shadow-md hidden  lg:visible">
+        <div class="">
           <img src="./images/fruit1.png" alt="">
           <p>Strawberry</p>
         </div>
@@ -161,9 +163,9 @@
         </div>
       </div>  
       <div>
-      </div>
+       </div>
       <!-- Deal section -->
-      <div class="deai-of-section flex justify-between">
+      <div class="deai-of-section flex flex-col lg:flex-row justify-between">
         <div class="">
           <h2 class="text-3xl font-extrabold mb-4">Deal of the day</h2>
           <p class="text-zinc-500">Contrary to popular belief, is not simply random text. It has roots in a piece of classical<br> Latin literature from 45 BC, making it over 2000 years old.</p>
@@ -200,9 +202,9 @@
 
     </main>
     <footer class="max-w-screen-xl mx-auto p-8 lg:14">
-      <div class="cards-items flex flex-col md:flex-row lg:flex-row mt-10  gap-10">
+      <div class="cards-items justify-center flex flex-col md:flex-row lg:flex-row mt-10  gap-10">
   
-        <div class="card w-96 bg-base-100 shadow-xl">
+        <div class="card lg:w-96 bg-base-100 shadow-xl">
           <figure class="px-10 pt-10">
             <img src="./images///fruit6.png" alt="Shoes" class="rounded-xl" />
           </figure>
@@ -218,10 +220,32 @@
                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
               </div>
             </div>
-            <p class="text-orange-500">Details</p>
+           <!-- The button to open modal -->
+<label for="my_modal_6" class="text-orange-500">Details</label>
+
+
+<input type="checkbox" id="my_modal_6" class="modal-toggle" />
+<div class="modal">
+  <div class="modal-box">
+    <img class="m-auto mb-4" src="./images/fruit6.png" alt="">
+    <h3 class="font-bold text-lg">Apple</h3>
+    <p class="py-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+    <div class="rating">
+      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+    </div>
+    <div class="modal-action">
+      <label for="my_modal_6" class="btn text-orange-500 font-bold border-orange-400">Close</label>
+      <label for="my_modal_6" class="btn bg-orange-500 text-white">Buy Now</label>
+    </div>
+  </div>
+</div>
           </div>
         </div>
-        <div class="card w-96 bg-base-100 shadow-xl">
+        <div class="card lg:w-96 bg-base-100 shadow-xl">
           <figure class="px-10 pt-10">
             <img src="./images///fruit7.png" alt="Shoes" class="rounded-xl" />
           </figure>
@@ -240,7 +264,7 @@
             <p class="text-orange-500">Details</p>
           </div>
         </div>
-        <div class="card w-96 bg-base-100 shadow-xl">
+        <div class="card lg:w-96  bg-base-100 shadow-xl">
           <figure class="px-10 pt-10">
             <img src="./images///fruit8.png" alt="Shoes" class="rounded-xl" />
           </figure>
@@ -259,7 +283,7 @@
             <p class="text-orange-500">Details</p>
           </div>
         </div>
-        <div class="card w-96 bg-base-100 shadow-xl">
+        <div class="card lg:w-96  bg-base-100 shadow-xl">
           <figure class="px-10 pt-10">
             <img src="./images///fruit9.png" alt="Shoes" class="rounded-xl" />
           </figure>
@@ -292,8 +316,8 @@
               <h1 class="mb-5 text-5xl font-bold">Meet the team section</h1>
               <p class="mb-5">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
               <!--  -->
-            <div class="team-cards flex text-center w-[800px] justify-center mx-auto -left-44 relative">
-              <div class="card">
+            <div class="team-cards flex flex-col md:flex-row lg:flex-row text-center w-[800px] justify-center mx-auto -left-44 relative">
+              <div class="card ">
                 <figure class="px-10 pt-10">
                   <img src="./images//member1.png" alt="Shoes" class="rounded-xl" />
                 </figure>
@@ -303,12 +327,12 @@
                   <div class="card-actions">
                     <i class=" bg-red-700 w-[30px] h-[30px] rounded-full  leading-[30px] fa-brands fa-facebook-f text-center"></i>
                     <i class=" bg-red-700 w-[30px] h-[30px] rounded-full  leading-[30px] fa-brands fa-twitter text-center"></i>
-                    <i class=" bg-red-700 w-[30px] h-[30px] rounded-full  leading-[30px] fa-brands fa-linkedin text-center"></i>
+                    <i class=" bg-red-700 w-[30px] h-[30px] rounded-full  leading-[30px] fa-brands fa-youtube text-center"></i>
                   </div>
                 </div>
               </div>
               <!-- end -->
-              <div class="card">
+              <div class="card ">
                 <figure class="px-10 pt-10">
                   <img src="./images//member2.png" alt="Shoes" class="rounded-xl" />
                 </figure>
@@ -332,13 +356,13 @@
                   <p>Fruits Expert</p>
                   <div class="card-actions">
                     <i class=" bg-red-700 w-[30px] h-[30px] rounded-full  leading-[30px] fa-brands fa-facebook-f text-center"></i>
-                    <i class=" bg-red-700 w-[30px] h-[30px] rounded-full  leading-[30px] fa-brands fa-youtube text-center"></i>
                     <i class=" bg-red-700 w-[30px] h-[30px] rounded-full  leading-[30px] fa-brands fa-twitter text-center"></i>
+                    <i class=" bg-red-700 w-[30px] h-[30px] rounded-full  leading-[30px] fa-brands fa-youtube text-center"></i>
                   </div>
                 </div>
               </div>
               <!-- end -->
-              <div class="card">
+              <div class="card flex flex-col">
                 <figure class="px-10 pt-10">
                   <img src="./images//member4.png" alt="Shoes" class="rounded-xl" />
                 </figure>
@@ -368,7 +392,7 @@
         <img src="./images/logo.png" alt="">
         <h1 class="text-2xl font-bold">Fruit Burst</h1>
       </div>
-      <ul class="flex gap-6 text-xl">
+      <ul class="flex flex-col lg:flex-row gap-6 text-xl">
         <li>Home</li>
         <li>About</li>
         <li>Blog</li>
